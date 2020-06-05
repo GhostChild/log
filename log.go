@@ -69,6 +69,11 @@ func Fatalf(template string, args ...interface{}) { sugaredLogger.Fatalf(templat
 
 func Fatalw(msg string, keysAndValues ...interface{}) { sugaredLogger.Fatalw(msg, keysAndValues...) }
 
+//flush
+func Sync() {
+	logger.Sync()
+}
+
 func CheckFatal(err error) {
 	if err != nil {
 		sugaredLogger.Fatalf("error: %s", err)
