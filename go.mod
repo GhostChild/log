@@ -1,4 +1,4 @@
-module log
+module github.com/GhostChild/log
 
 go 1.13
 
