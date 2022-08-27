@@ -1,5 +1,9 @@
 module github.com/GhostChild/log
 
-go 1.13
+go 1.18
 
-require go.uber.org/zap v1.15.0 // indirect
+require (
+	go.uber.org/atomic v1.10.0 // indirect
+	go.uber.org/multierr v1.8.0 // indirect
+	go.uber.org/zap v1.23.0
+)
